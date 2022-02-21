@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>example of load static</title>
 </head>
-<body>
-    <h1>Home</h1>
-</body>
+    <body>
+        <h1>Home</h1>
+        <img src="{% static 'img/cat.png' %}">
+        <video src="{% static 'video/movie.mp4' %} "></video>
+    </body>
 </html>
