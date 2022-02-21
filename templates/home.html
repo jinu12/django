@@ -1,16 +1,43 @@
 {% load static %}
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>example of load static</title>
+    <style>
+        h1 {
+            color: red;
+            background-color: pink;
+            text-align: center;
+        }
+        span {
+            background-color: yellow;
+        }
+        .ID {text-align: center;}
+        #picture { }
+    </style>
+    <script>
+        // JavaScript Comments
+        // alert('Alert');
+    </script>
 </head>
-    <body>
+
+<body>
+    <span>
         <h1>Home</h1>
-        <img src="{% static 'img/cat.png' %}">
-        <video src="{% static 'video/movie.mp4' %} "></video>
-        <a href="next">next</a>
-        <a href="next2">next2</a>
-        <a href="next3">next3</a>
-    </body>
+    </span>
+        <img src="{% static 'img/cat.png' %}" id="picture">
+    <form>
+        ID<input type="text" name="id" class="ID"><br>
+        Pw<input type="text" name="pw" class="ID"><br>
+        <input type="submit" value="LOGIN">
+    </form><br>
+    <button onclick="location.href='register'">Register</button>
+    <h2><a href="next">next</a></h2>
+    <h2><a href="next2">next2</a></h2>
+    <h2><a href="next3">next3</a></h2>
+    <h2><a href="next4">table</a></h2>
+</body>
+
 </html>

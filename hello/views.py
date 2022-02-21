@@ -21,3 +21,11 @@ class MyView(View):
     @request_mapping("/next3", method="get")
     def next3(self, request):
         return render(request, 'next3.html')
+
+    @request_mapping("/next4", method="get")
+    def next4(self, request):
+        return render(request, 'next4.html')
+
+    @request_mapping("/register", method="get")
+    def register(self, request):
+        return render(request, 'register.html')
