@@ -1,0 +1,15 @@
+.change {
+    background:red;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color:yellow;
+    background-color:blue;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
